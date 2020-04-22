@@ -27,4 +27,6 @@ One of the simpler (but more processor-intensive) ways of sorting a group of ite
 
 "Build a method bubble_sort that takes an array and returns a sorted array using bubble sort methodology"
 
+This solution takes input from the command line, asking for a list of numbers separated by a single space, each number in the array is then mapped to be an integer number and then used as a parameter for the bubble_sort method. Firstly the value of *swap* is set to be -1. While this value isn't 0, a for loop os used to check whether the value of index 1 is more than the value of index 2. If it is, then the values swap indexes (i.e. the larger value is pushed to the right) and the swap value is increased by 1. This is done all the way through the array from 'left' to 'right'. The process is then started again until every value is in order.
+
 
