@@ -64,3 +64,6 @@ I used [this](https://github.com/rlmoser99/ruby_Mastermind) student solution for
 The MasterMind game is a 1-player game, that is played in the command line. You can choose to be a coder-breaker with a computer randomly generated code, or you can choose to be a code-maker to create a code for the computer to break. For this program, I assigned numbers 1-6 to each of the coloured pegs, so the user only needs to input those numbers to enter the code. 
 
 ** Not finished yet **
+
+## Event Manager
+Imagine that a friend of yours runs a non-profit org around political activism. A number of people have registered for an upcoming event. She has asked for your help in engaging these future attendees.
