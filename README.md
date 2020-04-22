@@ -19,3 +19,12 @@ Firstly, an empty hash called *string_counts* was created which is the hash that
 
 First I created the variable *selling_margin* and saved into it the value of the range of the array (min-max) and created an empty array called *best_days_to_buy_sell*. I used the [combination](https://apidock.com/ruby/Array/combination) array method with a value of 2, which yields all combinations of length 2 from the array (i.e. every possible pair of values). I think used an if loop to check whether the x[1]-x[0] from the 'pair of values' was larger than the selling margin. If it was larger, then selling margin was set to that value (x[1]-x[0]) and those values were added to the *best_days_to_sell* array. If the x[1]-x[0] value wasn't larger than the selling margin then it is skipped and the next pair of values is looked at. The array of best days to buy and sell is then returned. (By doing x[1]-x[0] it's made sure that the item is bought before it is sold)
 
+
+## Bubble Sort
+Sorting algorithms are some of the earliest that you typically get exposed to in CS. It may not be immediately obvious how important they are, but it shoudn't be hard to think of some examples where your computer needs to sort some massive datasets during everyday operations.
+
+One of the simpler (but more processor-intensive) ways of sorting a group of items in an array is a bubble sort, where each element is compared to the one next to it and they are swapped if the one on the left is larger than the one on the right. This continues until the array is eventually sorted.
+
+"Build a method bubble_sort that takes an array and returns a sorted array using bubble sort methodology"
+
+
