@@ -58,3 +58,8 @@ The return value of *player_choice(player)* is saved into the *tile* variable; i
 
 The user is prompted whether they would like a rematch and if the user enters 'y' the game is played again.
 
+
+## MasterMind
+I used [this](https://github.com/rlmoser99/ruby_Mastermind) student solution for help.
+The MasterMind game is a 1-player game, that is played in the command line. You can choose to be a coder-breaker with a computer randomly generated code, or you can choose to be a code-maker to create a code for the computer to break. For this program, I assigned numbers 1-6 to each of the coloured pegs, so the user only needs to input those numbers to enter the code. 
+
