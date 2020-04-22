@@ -29,4 +29,32 @@ One of the simpler (but more processor-intensive) ways of sorting a group of ite
 
 This solution takes input from the command line, asking for a list of numbers separated by a single space, each number in the array is then mapped to be an integer number and then used as a parameter for the bubble_sort method. Firstly the value of *swap* is set to be -1. While this value isn't 0, a for loop os used to check whether the value of index 1 is more than the value of index 2. If it is, then the values swap indexes (i.e. the larger value is pushed to the right) and the swap value is increased by 1. This is done all the way through the array from 'left' to 'right'. The process is then started again until every value is in order.
 
+# Intermediate Ruby
+
+## Tic-Tac-Toe 
+I used [this](https://repl.it/@rryand/tictactoeruby) student solution for help
+The program is run from the *main.rb* file. The *lib/game* files are imported and a new instantiation of the *Game* class is created and saved into the name *tic_tac_toe*, the class method *start* is then run on the game object. 
+
+The game object is initialized with an empty *players* hash and an empty *scores* hash. There is also a padding variable with a value of 50. 
+The public methods in the Game class are -
+- start
+- get_player_names
+
+The private methods in the Game class are -
+- player_choice
+- mark_tile
+- play_turn
+- invalid?(tile)
+- victory?(mark, turn)
+- show_score
+
+The *start* method sets the default play value to true and a welcome message is displayed along with an explanation of which player is which symbol ('o' or 'x'). The *get_player_names* is run which takes a default value of an empty array. Both players are prompted to enter their name and then player 1 is assigned 'o' as their *mark* and player 2 is assigned 'x'. The instance variable *players* is updated to hold their name and their player number. 
+
+After this 'set-up' section of the game, a Board object is created from the Board class. attr_reader is used to set the variables :tiles and :winning_tiles to accessible (i.e. read-only). The tiles are labelled 1 through 9 and an array of winning combinations of tiles (i.e. 3 in a row) are saved to the instance variable *winning_tiles*. 9 'turns' are then given, with a label showing what turn the player is on and setting the mark for the player. *play_turn* is then run using the user's mark. The board is drawn which shows an empty board with numbers 1-9 on it. 
+
+The return value of *player_choice(player)* is saved into the *tile* variable; if the user enters a number other than 0-9 then an error message shows that it is invalid. This process is continued until *victory*. Victory is true if the group of tiles marked is in the *winning_tiles* array. If victory is true, the player's name is shown in the winning message "Amy wins!" etc. Else, if there is no victory and there has been 9 turns, then the message "It's a draw!" is shown. 
+
+*show_score* is used to show the scores for each player.
+
+The user is prompted whether they would like a rematch and if the user enters 'y' the game is played again.
 
