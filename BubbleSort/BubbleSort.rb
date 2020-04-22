@@ -14,4 +14,7 @@ def bubble_sort(arr)
     return "[#{output}]"
 end
 
-puts bubble_sort([4, 3, 78, 2, 0, 2])
+puts "Enter a list of numbers separated by a single space and we will have that sorted faster than you can say \"Abracadabra\""
+arr = gets.chomp.split(" ")
+arr = arr.map {|num| num.to_i}
+puts bubble_sort(arr)
