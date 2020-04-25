@@ -17,7 +17,7 @@ class Game
         while play == true
             @board = Board.new
             rematch = ''
-            (1..9) each do |turn|
+            (1..9).each do |turn|
                 puts "Turn #{turn}:"
                 mark = turn % 2 == 0 ? 'x' : 'o'
                 play_turn(mark)
@@ -84,19 +84,19 @@ class Game
 
     def victory?(mark, turn)
         player = @players[mark]
-        victory = @board.winning_tiles.any? do |tile.group|
+        victory = @board.winning_tiles.any? do |tile_group|
             tile_group.all? { |tile| @board.tiles[tile] == mark}
         end
 
         if victory
-            puts "-" * 50
+            puts "-" * 50,
             "#{player} wins!".center(@padding, '-'),
             "-" * 50
 
             @scores[player]=0 unless @scores.has_key? player
             @scores[player] += 1
         elsif !victory && turn >= 9
-            puts "-" * 50
+            puts "-" * 50,
             "It's a draw!".center(@padding, '-'),
             "-" * 50
         end
