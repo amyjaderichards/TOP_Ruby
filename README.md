@@ -67,3 +67,8 @@ The MasterMind game is a 1-player game, that is played in the command line. You 
 
 ## Event Manager
 Imagine that a friend of yours runs a non-profit org around political activism. A number of people have registered for an upcoming event. She has asked for your help in engaging these future attendees.
+
+** Not finished yet **
+
+## Hangman
+** Not finished yet **
