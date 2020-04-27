@@ -91,10 +91,10 @@ A #*rebalance!* method rebalances an unbalanced tree - a level-order array of th
 A simple driver script has been written that -
 1. Create a binary search tree from an array of random numbers
 2. Confirm that the tree is balanced by calling '#balanced?'
-Print out all elements in elvel, pre, post, and in order
-Try to unbalance thr tree by adding several numbers > 100
-Confirm that the tree is unbalcned by calling '#balanced?'
-Balance the tree by calling #rebalance!'
-Confirm that the tree is balanced by calling '#balanced?'
-Print out all elements in level, pre, post and in order
+3. Print out all elements in elvel, pre, post, and in order
+4. Try to unbalance thr tree by adding several numbers > 100
+5. Confirm that the tree is unbalcned by calling '#balanced?'
+6. Balance the tree by calling #rebalance!'
+7. Confirm that the tree is balanced by calling '#balanced?'
+8. Print out all elements in level, pre, post and in order
 
