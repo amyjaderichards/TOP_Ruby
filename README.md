@@ -78,3 +78,23 @@ Write a method *fibs* which takes a number and returns that many members of the 
 
 ## Merge Sort
 A merge sort is a type of sort that lends itself well to recursion and can be much faster than bubble sort on the right data sets. 
+
+## Linked List
+
+## Binary Search Tree
+Build a simple binary search tree. In this solution, we won't handle duplicate values as they are more complicated and result in trees that are much harder to balance. There is a *Node* class which has attributes for the data it stores as well as its left and right children. There is a *Tree* class which accepts an array when initialized. The Tree class has a root attribute which uses the return value of #*build_tree* - this is a method which takes an array of data and turns it into a balanced binary tree full of Node objects appropriately places. This method returns the level-1 root node.
+An #*insert* and #*delete* method accepts a value to insert/delete and a #*find* method that accepts a value and returns the node with the given value. A #*level_order* method accepts a block. This method traverses the tree in breadth-first level order and yield each node to the provided block. An array acting as a queue is used to keep track of all child nodes that have yet to be traversed to and to add new ones to the list.
+#*inorder*, #*preorder* and #*postorder* methods traverse the tree in their respective depth-first order and yield each node to the provided block, they return an array of values if no block is given.
+A #*depth* method accepts a node and returns the depth (number of levels) beneath the node. A #*balanced?* method checks if tree is balanced - a balanced tree is one where the difference between heights of left subtree and right subtree is not more than 1.
+A #*rebalance!* method rebalances an unbalanced tree - a level-order array of the tree is created before the array is passed back into the #*build_tree* method.
+
+A simple driver script has been written that -
+1. Create a binary search tree from an array of random numbers
+2. Confirm that the tree is balanced by calling '#balanced?'
+Print out all elements in elvel, pre, post, and in order
+Try to unbalance thr tree by adding several numbers > 100
+Confirm that the tree is unbalcned by calling '#balanced?'
+Balance the tree by calling #rebalance!'
+Confirm that the tree is balanced by calling '#balanced?'
+Print out all elements in level, pre, post and in order
+
