@@ -72,3 +72,9 @@ Imagine that a friend of yours runs a non-profit org around political activism. 
 
 ## Hangman
 ** Not finished yet **
+
+## Fibonacci
+Write a method *fibs* which takes a number and returns that many members of the fibonacci sequence. Use iteration for this solution. Now write another method *fibs_rec* which solves the same problem recursively.
+
+## Merge Sort
+A merge sort is a type of sort that lends itself well to recursion and can be much faster than bubble sort on the right data sets. 
